@@ -25,3 +25,6 @@ Adjust these steps when starting from this repo instead.
 
 # Notes
 - nix will ignore files not tracked by git. Ensure any new `*.nix` files are added.
+
+# Resources
+This repo was mostly put together thanks to https://nixos-and-flakes.thiscute.world/
