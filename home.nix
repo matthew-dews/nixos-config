@@ -30,6 +30,7 @@
   };
 
   # Packages that should be installed to the user profile.
+  # Packages can be found via 'nix search nixpkgs search_term'
   home.packages = with pkgs; [
     # archives
     zip
