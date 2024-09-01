@@ -59,6 +59,9 @@
     # system call monitoring
     lsof # list open files
 
+    # development related
+    nixfmt-rfc-style
+
     # system tools
     sysstat
     lm_sensors # for `sensors` command
