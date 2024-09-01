@@ -23,3 +23,5 @@ git commit -m "Initial commit"
 
 Adjust these steps when starting from this repo instead.
 
+# Notes
+- nix will ignore files not tracked by git. Ensure any new `*.nix` files are added.
