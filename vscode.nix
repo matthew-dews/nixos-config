@@ -8,8 +8,6 @@
       bbenoist.nix
       ms-python.python
     ];
-    userSettings = {
-    };
+    userSettings = { };
   };
 }
-
