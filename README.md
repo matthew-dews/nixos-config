@@ -1,5 +1,7 @@
-# Applying changes to /etc/nixos/configuration.nix
+# Applying changes
 Run `sudo nixos-rebuild switch` to apply modifications.
+
+Because this setup uses Home Manager as a NixOS module this will also rebuild the Home Manager setup.
 
 # Initial setup
 
