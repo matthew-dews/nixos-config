@@ -91,7 +91,7 @@
       # Search extensions via the output of `nix flake show gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons`
       # or at https://nur.nix-  nixpkgs.config.allowUnfree = true;community.org/repos/rycee
       extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
-        #onepassword-password-manager
+        onepassword-password-manager
         ublock-origin
       ];
     };

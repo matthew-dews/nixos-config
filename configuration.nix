@@ -94,6 +94,8 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  # Doesn't make a difference
+  nixpkgs.config.alowUnfreePredicate = (_: true);
 
   # Enable the Flakes feature and the accompanying new nix command-line tool
   nix.settings.experimental-features = [
@@ -114,6 +116,8 @@
   ];
   # Set the default editor to neovim
   environment.variables.EDITOR = "neovim";
+  # No difference
+  environment.variables.NIXPKGS_ALLOW_UNFREE = "1";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
