@@ -6,6 +6,11 @@
     # I got errors when this version was different than system.stateVersion in configuration.nix
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # home-manager, used for managing user configuration
     home-manager = {
       url = "github:nix-community/home-manager/release-24.05";
@@ -31,6 +36,8 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+
+            home-manager.backupFileExtension = "bak";
 
             home-manager.users.corinne = import ./home.nix;
 
