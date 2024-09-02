@@ -24,13 +24,11 @@
   #     xxx
   # '';
 
-  # Doesn't work
-  home.file.".config/nixpkgs/config.nix".text = ''
-    { allowUnfree = true; }
-  '';
-
-  # Doesn't work
-  nixpkgs.config.allowUnfree = true;
+  # set cursor size and dpi for 4k monitor
+  xresources.properties = {
+    "Xcursor.size" = 16;
+    "Xft.dpi" = 172;
+  };
 
   # Packages that should be installed to the user profile.
   # Packages can be found via 'nix search nixpkgs search_term'
