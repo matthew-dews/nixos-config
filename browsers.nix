@@ -121,6 +121,50 @@ in
       "extensions.autoDisableScopes" = 0; # Automatically enable extensions
       "extensions.update.enabled" = false; # Don't update extensions since they're sourced from rycee
     };
+    # This setting is adapted from the browser.uiCustomization.state setting in about:config
+    policies.Preferences."browser.uiCustomization.state" = builtins.toJSON {
+      placements = {
+        widget-overflow-fixed-list = [ ];
+        unified-extensions-area = [ "enhancerforyoutube_maximerf_addons_mozilla_org-browser-action" ];
+        nav-bar = [
+          "back-button"
+          "forward-button"
+          "stop-reload-button"
+          "urlbar-container"
+          "_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action"
+          "ublock0_raymondhill_net-browser-action"
+          "downloads-button"
+          "_testpilot-containers-browser-action"
+          "reset-pbm-toolbar-button"
+          "unified-extensions-button"
+        ];
+        toolbar-menubar = [ "menubar-items" ];
+        TabsToolbar = [
+          "tabbrowser-tabs"
+          "new-tab-button"
+          "alltabs-button"
+        ];
+        PersonalToolbar = [ "personal-bookmarks" ];
+      };
+      seen = [
+        "save-to-pocket-button"
+        "developer-button"
+        "ublock0_raymondhill_net-browser-action"
+        "_testpilot-containers-browser-action"
+        "enhancerforyoutube_maximerf_addons_mozilla_org-browser-action"
+        "_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action"
+      ];
+      dirtyAreaCache = [
+        "nav-bar"
+        "PersonalToolbar"
+        "toolbar-menubar"
+        "TabsToolbar"
+        "widget-overflow-fixed-list"
+        "unified-extensions-area"
+      ];
+      currentVersion = 20;
+      newElementCount = 8;
+    };
     profiles.default = {
       search = {
         force = true;
