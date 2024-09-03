@@ -3,6 +3,7 @@
 {
   imports = [
     ./browsers.nix
+    ./fish.nix
     ./vscode.nix
   ];
 

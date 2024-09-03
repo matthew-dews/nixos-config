@@ -90,6 +90,9 @@
       kdePackages.kate
       #  thunderbird
     ];
+    # While this may look like something that can be done in Home Manager, it cannot.
+    # The user's default shell is a system level setting.
+    shell = pkgs.fish;
   };
 
   # Allow unfree packages
@@ -104,8 +107,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # Flakes clones its dependnecies through the git command.
-    # so git must be installed first
+    # Flakes clones its dependencies through the git command.
+    # so git must be installed
     curl
     git
     neovim
@@ -114,6 +117,8 @@
   ];
   # Set the default editor to neovim
   environment.variables.EDITOR = "neovim";
+
+  programs.fish.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
