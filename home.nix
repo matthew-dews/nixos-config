@@ -64,6 +64,7 @@
 
     # development related
     nixfmt-rfc-style
+    nodejs_20
 
     # system tools
     sysstat
