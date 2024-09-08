@@ -39,6 +39,7 @@
     xz
     unzip
     p7zip
+    zstd
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
@@ -46,31 +47,24 @@
 
     # misc
     cowsay
-    which
     tree
-    zstd
-
-    # nix related
-    #
-    # it provides the command `nom` works just like `nix`
-    # with more details log output
-    nix-output-monitor
+    which
 
     # productivity
-    glow # markdown previewer in terminal
-
-    # system call monitoring
-    lsof # list open files
 
     # development related
     nixfmt-rfc-style
     nodejs_20
 
     # system tools
-    sysstat
-    lm_sensors # for `sensors` command
     ethtool
+    lm_sensors # for `sensors` command
+    lsof # list open files
+    # it provides the command `nom` works just like `nix`
+    # with more detailed log output
+    nix-output-monitor
     pciutils # lspci
+    sysstat
     usbutils # lsusb
   ];
 
