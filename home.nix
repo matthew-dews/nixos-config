@@ -51,6 +51,7 @@
     which
 
     # productivity
+    obsidian
 
     # development related
     nixfmt-rfc-style
