@@ -25,6 +25,13 @@ git commit -m "Initial commit"
 
 Adjust these steps when starting from this repo instead.
 
+# Updating nix
+sudo nixos-rebuild switch --upgrade
+
+# Available Settings
+
+Home Manager (generaly user specific) settings: https://nix-community.github.io/home-manager/options.xhtml
+
 # Notes
 - nix will ignore files not tracked by git. Ensure any new `*.nix` files are added.
 
