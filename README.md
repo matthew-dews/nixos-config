@@ -26,7 +26,11 @@ git commit -m "Initial commit"
 Adjust these steps when starting from this repo instead.
 
 # Updating nix
-sudo nixos-rebuild switch --upgrade
+`nix flake update`
+or
+`sudo nixos-rebuild switch --upgrade`
+
+TODO: what is the difference?
 
 # Available Settings
 
