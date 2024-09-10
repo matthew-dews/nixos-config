@@ -186,6 +186,7 @@ in
       # Note: If desired you can have the build failed when new permissions are added:
       # https://gitlab.com/rycee/nur-expressions/?dir=pkgs%2Ffirefox-addons#permission-allow-lists
       extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
+        plasma-integration
         ublock-origin
 
         # I have not been able to get unfree extensions working. Looking through many examples
