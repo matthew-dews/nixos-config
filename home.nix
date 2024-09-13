@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  inputs,
+  pkgs,
+  ...
+}:
 
 {
   imports = [
@@ -51,6 +56,7 @@
     which
 
     # productivity
+    inputs.llmify.packages.${pkgs.system}.default
     obsidian
 
     # development related
