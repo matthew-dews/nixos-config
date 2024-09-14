@@ -32,6 +32,14 @@ or
 
 TODO: what is the difference?
 
+# Applying changes
+```
+# Optional, can be used to check for errors without applying changes
+nix flake check
+
+sudo nixos-rebuild switch
+```
+
 # Available Settings
 
 Home Manager (generaly user specific) settings: https://nix-community.github.io/home-manager/options.xhtml
