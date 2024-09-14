@@ -23,6 +23,7 @@
 
     llmify = {
       url = "github:corinfinite/llmify";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
