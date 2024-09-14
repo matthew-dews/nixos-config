@@ -112,6 +112,7 @@
     curl
     git
     neovim
+    python312
     vim
     wget
 
