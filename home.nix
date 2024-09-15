@@ -61,6 +61,7 @@
 
     # development related
     nixfmt-rfc-style
+    inputs.pyinit.packages.${pkgs.system}.default
     poetry
     nodejs_20
 

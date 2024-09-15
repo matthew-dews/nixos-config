@@ -21,6 +21,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    pyinit = {
+      url = "github:corinfinite/pyinit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     llmify = {
       url = "github:corinfinite/llmify";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,6 +36,7 @@
     inputs@{
       nixpkgs,
       home-manager,
+      pyinit,
       llmify,
       ...
     }:
