@@ -105,7 +105,7 @@
   ];
 
   # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # $ nix search nixpkgs wget
   environment.systemPackages = with pkgs; [
     # Flakes clones its dependencies through the git command.
     # so git must be installed
