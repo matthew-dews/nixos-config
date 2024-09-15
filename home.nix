@@ -61,6 +61,7 @@
 
     # development related
     nixfmt-rfc-style
+    poetry
     nodejs_20
 
     # system tools
