@@ -103,11 +103,11 @@
         "poetry2nix": "poetry2nix"
       },
       "locked": {
-        "lastModified": 1726363409,
-        "narHash": "sha256-Sndomw8MFK/AvgfCtuatjKeCn3PJQD/ckK5EFRVW/iw=",
+        "lastModified": 1726364136,
+        "narHash": "sha256-dK350S6joCfI6NrTNkMZ7qihdE6OeWbMgFLjHOd14u0=",
         "owner": "corinfinite",
         "repo": "llmify",
-        "rev": "07f21d102fa1635894702e625cee6867c86757ea",
+        "rev": "257abb2789bfe1d91565dfee9e75bf3b8a811cac",
         "type": "github"
       },
       "original": {
@@ -260,11 +260,11 @@
         "poetry2nix": "poetry2nix_2"
       },
       "locked": {
-        "lastModified": 1726363537,
-        "narHash": "sha256-8w0FC89tpZg+prBQFMZUtayCm/Hn+EMKUL8mJZiGDhM=",
+        "lastModified": 1726364057,
+        "narHash": "sha256-Vkw5u+4tcpoSSzQ9ya7MFvZlwKZRn8uZr4woAOUKOxQ=",
         "owner": "corinfinite",
         "repo": "pyinit",
-        "rev": "c7fb818de42d54223db385a0c2da2f5b2532bfdc",
+        "rev": "93b784a51e8737cc69be93b99f4515a82cd23e1f",
         "type": "github"
       },
       "original": {
