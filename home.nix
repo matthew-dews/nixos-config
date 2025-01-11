@@ -52,6 +52,7 @@
 
     # misc
     cowsay
+    signal-desktop
     tree
     which
 
@@ -60,10 +61,13 @@
     obsidian
 
     # development related
+    bun
+    code-cursor
+    gh
     nixfmt-rfc-style
-    inputs.pyinit.packages.${pkgs.system}.default
-    poetry
     nodejs_20
+    poetry
+    inputs.pyinit.packages.${pkgs.system}.default
 
     # system tools
     ethtool

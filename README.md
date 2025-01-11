@@ -32,6 +32,8 @@ or
 
 TODO: what is the difference?
 
+TODO: what about when I want to update the NixOS version? e.g. from 24.05 to 24.11?
+
 # Applying changes
 ```
 # Optional, can be used to check for errors without applying changes

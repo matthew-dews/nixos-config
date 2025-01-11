@@ -110,13 +110,13 @@
     # Flakes clones its dependencies through the git command.
     # so git must be installed
     curl
+    # TODO: run `espanso service register && espanso service start`
+    espanso-wayland
     git
     neovim
     python312
     vim
     wget
-
-    (callPackage ./cursor.nix {})
   ];
   # Set the default editor to neovim
   environment.variables.EDITOR = "nvim";
